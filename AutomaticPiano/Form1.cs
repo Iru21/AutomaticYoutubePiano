@@ -64,7 +64,7 @@ namespace AutomaticPiano
             {
                 while (repeat)
                 {
-                    int bpm = 60000 / (Convert.ToInt32(numericUpDown1.Value) * 4);
+                    int bpm = 60000 / (Convert.ToInt32(numericUpDown1.Value) / 4);
 
                     for (int i = 0; i < Input.Text.Length; ++i)
                     {
@@ -82,7 +82,7 @@ namespace AutomaticPiano
             }
             else
             {
-                int bpm = 60000 / (Convert.ToInt32(numericUpDown1.Value) * 4);
+                int bpm = 60000 / (Convert.ToInt32(numericUpDown1.Value) / 4);
 
                 for (int i = 0; i < Input.Text.Length; ++i)
                 {
