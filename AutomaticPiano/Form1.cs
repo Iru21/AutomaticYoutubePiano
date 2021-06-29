@@ -70,7 +70,7 @@ namespace AutomaticPiano
                     {
                         string additional = null;
                         bool hasAdditional = false;
-                        if (System.Text.RegularExpressions.Regex.IsMatch(Convert.ToString(Input.Text[i + 1]), "J") || System.Text.RegularExpressions.Regex.IsMatch(Convert.ToString(Input.Text[i + 1]), "L"))
+                        if (System.Text.RegularExpressions.Regex.IsMatch(Convert.ToString(Input.Text[i + 1]), "Jj") || System.Text.RegularExpressions.Regex.IsMatch(Convert.ToString(Input.Text[i + 1]), "Ll"))
                         {
                             additional = Convert.ToString(Input.Text[i + 1]);
                             hasAdditional = true;
@@ -90,7 +90,7 @@ namespace AutomaticPiano
                     bool hasAdditional = false;
                     if (Input.Text.Length != i + 1)
                     {
-                        if (System.Text.RegularExpressions.Regex.IsMatch(Convert.ToString(Input.Text[i + 1]), "J") || System.Text.RegularExpressions.Regex.IsMatch(Convert.ToString(Input.Text[i + 1]), "L"))
+                        if (System.Text.RegularExpressions.Regex.IsMatch(Convert.ToString(Input.Text[i + 1]), "Jj") || System.Text.RegularExpressions.Regex.IsMatch(Convert.ToString(Input.Text[i + 1]), "Ll"))
                         {
                             additional = Convert.ToString(Input.Text[i + 1]);
                             hasAdditional = true;
